@@ -22,8 +22,6 @@ static function X2CharacterTemplate CreateTemplate_Spectre()
 	CharTemplate.BehaviorClass = class'XGAIBehavior';
 	CharTemplate.strPawnArchetypes.AddItem("GameUnit_Spectre.ARC_GameUnit_Spectre");
 
-
-
 	CharTemplate.UnitSize = 1;
 
 	// Traversal Rules
@@ -74,29 +72,16 @@ static function X2CharacterTemplate CreateTemplate_Spectre()
 	CharTemplate.Abilities.AddItem('LiftOffAvenger');
 	CharTemplate.Abilities.AddItem('Knockout');
 	CharTemplate.Abilities.AddItem('KnockoutSelf');
-	CharTemplate.Abilities.AddItem('Panicked');
-	CharTemplate.Abilities.AddItem('Berserk');
-	CharTemplate.Abilities.AddItem('Obsessed');
-	CharTemplate.Abilities.AddItem('Shattered');
 	CharTemplate.Abilities.AddItem('Interact_UseElevator');
+	CharTemplate.Abilities.AddItem('Interact_MarkSupplyCrate');
 
-	// bondmate abilities
-	//CharTemplate.Abilities.AddItem('BondmateResistantWill');
-	CharTemplate.Abilities.AddItem('BondmateSolaceCleanse');
-	CharTemplate.Abilities.AddItem('BondmateSolacePassive');
-	CharTemplate.Abilities.AddItem('BondmateTeamwork');
-	CharTemplate.Abilities.AddItem('BondmateTeamwork_Improved');
-	CharTemplate.Abilities.AddItem('BondmateSpotter_Aim');
-	CharTemplate.Abilities.AddItem('BondmateSpotter_Aim_Adjacency');
-	//CharTemplate.Abilities.AddItem('BondmateSpotter_Crit');
-	//CharTemplate.Abilities.AddItem('BondmateSpotter_Crit_Adjacency');
-	//CharTemplate.Abilities.AddItem('BondmateReturnFire_Passive');
-	//CharTemplate.Abilities.AddItem('BondmateReturnFire');
-	//CharTemplate.Abilities.AddItem('BondmateReturnFire_Adjacency');
-	//CharTemplate.Abilities.AddItem('BondmateReturnFire_Improved_Passive');
-	//CharTemplate.Abilities.AddItem('BondmateReturnFire_Improved');
-	//CharTemplate.Abilities.AddItem('BondmateReturnFire_Improved_Adjacency');
-	CharTemplate.Abilities.AddItem('BondmateDualStrike');
+	CharTemplate.ImmuneTypes.AddItem('Poison');
+	CharTemplate.ImmuneTypes.AddItem('Fire');
+	CharTemplate.ImmuneTypes.AddItem('Mental');
+	CharTemplate.ImmuneTypes.AddItem('Panicked');
+	CharTemplate.ImmuneTypes.AddItem('Berserk');
+	CharTemplate.ImmuneTypes.AddItem('Obsessed');
+	CharTemplate.ImmuneTypes.AddItem('Shattered');
 
 	CharTemplate.strTargetIconImage = class'UIUtilities_Image'.const.TargetIcon_Alien;
 
@@ -152,6 +137,7 @@ static function X2CharacterTemplate CreateTemplate_ShadowbindUnit(name CharTempl
 	CharTemplate.Abilities.AddItem('ShadowUnitInitialize');
 	CharTemplate.Abilities.AddItem('SpectreImmunities');
 	CharTemplate.Abilities.AddItem('ShadowUnitSplit');
+	CharTemplate.Abilities.AddItem('PAHorror');
 
 	return CharTemplate;
 }
