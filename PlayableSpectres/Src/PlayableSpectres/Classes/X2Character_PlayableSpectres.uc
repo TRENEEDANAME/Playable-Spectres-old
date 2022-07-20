@@ -74,14 +74,13 @@ static function X2CharacterTemplate CreateTemplate_Spectre()
 	CharTemplate.Abilities.AddItem('KnockoutSelf');
 	CharTemplate.Abilities.AddItem('Interact_UseElevator');
 	CharTemplate.Abilities.AddItem('Interact_MarkSupplyCrate');
+	CharTemplate.Abilities.AddItem('Panicked');
+	CharTemplate.Abilities.AddItem('Berserk');
+	CharTemplate.Abilities.AddItem('Obsessed');
+	CharTemplate.Abilities.AddItem('Shattered');
 
 	CharTemplate.ImmuneTypes.AddItem('Poison');
 	CharTemplate.ImmuneTypes.AddItem('Fire');
-	CharTemplate.ImmuneTypes.AddItem('Mental');
-	CharTemplate.ImmuneTypes.AddItem('Panicked');
-	CharTemplate.ImmuneTypes.AddItem('Berserk');
-	CharTemplate.ImmuneTypes.AddItem('Obsessed');
-	CharTemplate.ImmuneTypes.AddItem('Shattered');
 
 	CharTemplate.strTargetIconImage = class'UIUtilities_Image'.const.TargetIcon_Alien;
 
