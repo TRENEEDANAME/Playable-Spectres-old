@@ -44,8 +44,6 @@ static function X2DataTemplate CreateTemplate_PA_SpectreGun()
 	Template.Abilities.AddItem('OverwatchShot');
 	Template.Abilities.AddItem('Reload');
 	Template.Abilities.AddItem('HotLoadAmmo');
-	// added as class levels up: Template.Abilities.AddItem('Suppression');
-	// added as class levels up: Template.Abilities.AddItem('Execute');
 	Template.GameArchetype = "WP_SpectreRifle.WP_SpectreRifle";
 	Template.iPhysicsImpulse = 5;
 
@@ -77,7 +75,7 @@ static function X2DataTemplate CreateTemplate_SpecPsiAmp()
 
 	Template.DamageTypeTemplateName = 'Psi';
 
-	Template.Abilities.AddItem('Horror');
+	Template.Abilities.AddItem('PAHorror');
 	
 	Template.ExtraDamage = class'X2Item_DefaultWeapons'.default.PSIAMPT3_ABILITYDAMAGE;
 
