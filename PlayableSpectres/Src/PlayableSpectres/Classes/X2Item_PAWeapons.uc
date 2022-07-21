@@ -4,10 +4,7 @@ class X2Item_PAWeapons extends X2Item
 static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> ModWeapons;
-	`log ("davea debug weapon-create-templates enter");
 	ModWeapons.AddItem(CreateTemplate_PA_SpectreGun());
-
-	`log ("davea debug weapon-create-templates done");
 	
 	return ModWeapons;
 }
@@ -44,6 +41,8 @@ static function X2DataTemplate CreateTemplate_PA_SpectreGun()
 	Template.Abilities.AddItem('OverwatchShot');
 	Template.Abilities.AddItem('Reload');
 	Template.Abilities.AddItem('HotLoadAmmo');
+	
+	// This includes all the sounds and animations for the weapon
 	Template.GameArchetype = "WP_SpectreRifle.WP_SpectreRifle";
 	Template.iPhysicsImpulse = 5;
 
