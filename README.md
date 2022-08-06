@@ -1,5 +1,7 @@
 # Playable Spectres [WOTC]
 
+# THIS IS THE OLD VERSION, THE NEW REPOSITORY IS FOUND [HER](
+
 Description = Allows you to have a Spectres on your side. You will get them as a project in the proving grounds. 
 
 ## Cost
