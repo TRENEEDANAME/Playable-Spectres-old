@@ -1,6 +1,6 @@
 # Playable Spectres [WOTC]
 
-# THIS IS THE OLD VERSION, THE NEW REPOSITORY IS FOUND [HER](
+# THIS IS THE OLD VERSION, THE NEW REPOSITORY IS FOUND [HERE](https://github.com/TRENEEDANAME/Playable-Spectres)
 
 Description = Allows you to have a Spectres on your side. You will get them as a project in the proving grounds. 
 
